@@ -39,7 +39,7 @@ def datos_persona():
 
 def quitar_acentos_simple(texto):
     con_acento = "áéíóúÁÉÍÓÚñÑ"
-    sin_acento = "aeiouAEIOUñÑ"  # Conserva la Ñ si lo deseas
+    sin_acento = "aeiouAEIOUñÑ"
     tabla = str.maketrans(con_acento, sin_acento)
     return texto.translate(tabla)
 
